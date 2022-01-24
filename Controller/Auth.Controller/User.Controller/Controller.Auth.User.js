@@ -1,4 +1,3 @@
-const chalk = require('chalk');
 const Users = require('../../../Model/User.Model/Schema.User');
 const {
     UserCreate,
@@ -18,7 +17,6 @@ const AuthUsersController = {
                     error: err[0].message
                 })
             }
-            console.log(chalk.bgGreenBright(JSON.stringify(req.body)));
             const newUser = new Users(req.body);
             await newUser.save();
             const token = await newUser.generateAccessToken();
@@ -45,7 +43,6 @@ const AuthUsersController = {
                     error: err[0].message
                 });
             }
-            console.log(chalk.bgYellowBright(JSON.stringify(req.body)));
             const {email, password} = req.body;
             const isUserExist = await Users.checkCredentials(email, password);
             const userData = await isUserExist.removeUnnecessary();
