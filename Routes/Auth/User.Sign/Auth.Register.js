@@ -6,6 +6,7 @@ const AuthGuard = require('../../../Middleware/middleware.Users')
 Connection(process.env.USER_DB);
 
 
+
 /** Register Users */
 
 Router.post('/api/register', AuthUsersController.registerUser);
