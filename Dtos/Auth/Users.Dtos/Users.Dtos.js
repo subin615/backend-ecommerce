@@ -30,7 +30,7 @@ const UserCreate = new Schema({
     },
     userType: {
         type: String,
-        enum: ["personal", "business"]
+        enum: ["PERSONAL", "BUSINESS"]
     }
 })
 
