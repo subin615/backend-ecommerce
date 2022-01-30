@@ -12,8 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "class-transformer": "^0.5.1",
-    "class-validator": "^0.13.2",
     "cors": "^2.8.5",
     "dotenv": "^14.2.0",
     "env-cmd": "^10.1.0",
@@ -23,7 +21,7 @@
     "mongodb": "^4.3.1",
     "mongoose": "^6.1.7",
     "morgan": "^1.10.0",
-    "uninstall": "^0.0.0",
+    "unirest": "^0.6.0",
     "validator": "^13.7.0",
     "valivar": "^6.2.11"
   },
